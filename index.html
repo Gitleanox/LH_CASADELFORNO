@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa del Forno — Pizzeria Artisanale à Le Havre Graville</title>
+    <meta name="description"
+        content="Pizza au four, pâte fine, ingrédients frais. Commandez en livraison ou passez nous voir au 66 Rue de la Vallée, Le Havre. Ouvert 7j/7.">
+    <!-- SVG Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
+
+    <!-- Google Fonts: Montserrat (Headlines) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Stars & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- STICKY HEADER -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-fire-burner"></i>
+                CASA DEL FORNO
+            </a>
+            <button class="mobile-toggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#a-propos">À Propos</a>
+                <a href="#avis">Avis</a>
+                <a href="#contact">Contact</a>
+                <a href="#commander" class="btn btn-cta">Commander</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SPLIT-SCREEN -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fa-solid fa-star"></i> 4.8/5 sur Google — 60+ avis
+                    </div>
+                    <h1>La vraie pizza artisanale au cœur de Graville</h1>
+                    <p class="subtitle">Pâte fine, ingrédients frais, cuisson au four — depuis Le Havre</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-outline">Voir le Menu</a>
+                        <a href="#commander" class="btn btn-cta">Commander en livraison</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- High quality realistic pizza image from Unsplash -->
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80"
+                        alt="Pizza artisanale cuite au feu de bois" class="hero-img parallax-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIALTIES GRID -->
+        <section id="specialites" class="section-bg">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-pizza-slice text-accent"></i></div>
+                        <h3>Pizzas Base Tomate</h3>
+                        <p>Classiques revisitées avec des ingrédients frais</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-cheese text-accent"></i></div>
+                        <h3>Pizzas Base Crème</h3>
+                        <p>Gourmandes et généreuses</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-hotdog text-accent"></i></div>
+                        <h3>Paninis & Formules</h3>
+                        <p>Seuls ou en duo, parfaits pour le déjeuner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="a-propos">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Le Four au Cœur de Tout</h2>
+                    <p>Chez <strong>Casa del Forno</strong>, chaque pizza est préparée avec une pâte fine et
+                        croustillante, garnie généreusement d'ingrédients frais et cuite dans notre four — notre fierté.
+                        Un accueil chaleureux, un service rapide, et un rapport qualité-prix que nos clients adorent.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">4.8/5</span>
+                            <span class="stat-label">Google</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">60+</span>
+                            <span class="stat-label">Avis</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">7j/7</span>
+                            <span class="stat-label">Ouvert</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+                        alt="Préparation de la pizza" class="rounded-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR PIZZAS SECTION -->
+        <section id="menu" class="section-bg">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Nos Pizzas Favorites</h2>
+                    <p>Découvrez les incontournables de notre carte</p>
+                </div>
+                <div class="grid-4">
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                                alt="Pizza Al Forno">
+                            <span class="tag">Spécialité MAISON</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Al Forno</h3>
+                            <p>Viande hachée, poulet, oignons, poivrons</p>
+                            <a href="#commander" class="btn btn-sm btn-outline">Commander</a>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1573821663912-569905455b1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80"
+                                alt="Pizza 4 Fromages">
+                        </div>
+                        <div class="menu-content">
+                            <h3>4 Fromages</h3>
+                            <p>Mozzarella, chèvre, gorgonzola, emmental</p>
+                            <a href="#commander" class="btn btn-sm btn-outline">Commander</a>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                                alt="Pizza Orientale">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Orientale</h3>
+                            <p>Merguez, poivrons, oignons, olives</p>
+                            <a href="#commander" class="btn btn-sm btn-outline">Commander</a>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+                                alt="Pizza Bolognaise">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Bolognaise</h3>
+                            <p>Viande de bœuf hachée, sauce tomate, oignons</p>
+                            <a href="#commander" class="btn btn-sm btn-outline">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS SECTION -->
+        <section id="avis">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Ce que nos clients disent</h2>
+                    <p>Vos retours font notre fierté</p>
+                </div>
+                <div class="grid-3">
+                    <div class="review-card">
+                        <p class="quote">"Pâte fine et bien cuite, garniture généreuse. Meilleure pizza du quartier !"
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="quote">"Accueil toujours chaleureux, service rapide même en livraison."</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="quote">"Excellent rapport qualité-prix, on revient chaque semaine."</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORDER SECTION -->
+        <section id="commander" class="section-bg section-order">
+            <div class="container center">
+                <h2>Commandez facilement</h2>
+                <p>En livraison via nos partenaires ou par téléphone pour venir chercher sur place.</p>
+                <div class="order-actions">
+                    <a href="https://www.ubereats.com/fr/store/casa-del-forno/QgcJ4yzuRWWSuu44VAfj8A" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-uber btn-lg">
+                        <i class="fa-brands fa-uber"></i> Commander sur Uber Eats
+                    </a>
+                    <!-- Deliveroo link to be replaced later -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-deliveroo btn-lg">
+                        <i class="fa-solid fa-bicycle"></i> Commander sur Deliveroo
+                    </a>
+                </div>
+                <div class="direct-call">
+                    <p>Pour une commande directe :</p>
+                    <a href="tel:0981069150" class="phone-link">
+                        <i class="fa-solid fa-phone"></i> 09 81 06 91 50
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ ACCORDION -->
+        <section id="faq">
+            <div class="container container-sm">
+                <div class="section-header center">
+                    <h2>Foire Aux Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Quels sont vos horaires ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Tous les jours 11h-14h et 17h-22h30</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Vous livrez ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, via Uber Eats et Deliveroo, ou commandez par téléphone.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Où êtes-vous situés ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>66 Rue de la Vallée, 76600 Le Havre (quartier Graville)</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Peut-on manger sur place ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, sur place ou à emporter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Casa del Forno</h3>
+                <p class="footer-desc">Pizzeria artisanale à Le Havre Graville. Cuisson au four, pâte fine et
+                    ingrédients frais. Vente sur place, à emporter ou en livraison.</p>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> 66 Rue de la Vallée, 76600 Le Havre</p>
+                    <p><i class="fa-solid fa-phone"></i> 09 81 06 91 50</p>
+                    <p><i class="fa-solid fa-clock"></i> Tous les jours 11h-14h / 17h-22h30</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.ubereats.com/fr/store/casa-del-forno/QgcJ4yzuRWWSuu44VAfj8A" target="_blank"
+                        aria-label="Uber Eats"><i class="fa-brands fa-uber"></i></a>
+                    <a href="#" aria-label="Deliveroo"><i class="fa-solid fa-bicycle"></i></a>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.5!2d0.1531!3d49.4939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f6b487b2847%3A0xfdc320e1f220706a!2sCASA%20DEL%20FORNO!5e0!3m2!1sfr!2sfr!4v1710000000000"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Casa del Forno. Tous droits réservés.</p>
+            </div>
+        </div>
+        <!-- SEO hidden text snippet just in case -->
+        <div style="display:none;">
+            CASA DEL FORNO — Pizzeria artisanale à Le Havre Graville. Pizza au four, livraison et à emporter. Meilleure
+            pizzeria du quartier Graville.
+        </div>
+    </footer>
+
+</body>
+
+</html>
